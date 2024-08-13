@@ -1,0 +1,52 @@
+<form>
+    <h1>Register on Naukri.com</h1>
+    <fieldset>
+      <legend>Personal Details</legend>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <br><br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <br><br>
+      <label for="mobile">Mobile Number:</label>
+      <input type="tel" id="mobile" name="mobile" required>
+      <br><br>
+    </fieldset>
+    <fieldset>
+      <legend>Professional Details</legend>
+      <label for="currentCompany">Current Company:</label>
+      <input type="text" id="currentCompany" name="currentCompany" required>
+      <br><br>
+      <label for="currentDesignation">Current Designation:</label>
+      <input type="text" id="currentDesignation" name="currentDesignation" required>
+      <br><br>
+      <label for="totalExperience">Total Experience:</label>
+      <input type="number" id="totalExperience" name="totalExperience" required>
+      <br><br>
+    </fieldset>
+    <fieldset>
+      <legend>Education</legend>
+      <label for="highestQualification">Highest Qualification:</label>
+      <select id="highestQualification" name="highestQualification" required>
+        <option value="">Select a qualification</option>
+        <option value="bachelor">Bachelor's Degree</option>
+        <option value="master">Master's Degree</option>
+        <option value="phd">Ph.D.</option>
+        <!-- add more options here -->
+      </select>
+      <br><br>
+      <label for="institute">Institute:</label>
+      <input type="text" id="institute" name="institute" required>
+      <br><br>
+    </fieldset>
+    <fieldset>
+      <legend>Skills</legend>
+      <label for="skills">Skills:</label>
+      <textarea id="skills" name="skills" required></textarea>
+      <br><br>
+    </fieldset>
+    <input type="checkbox" id="terms" name="terms" required>
+    <label for="terms">I agree to Naukri.com's Terms and Conditions</label>
+    <br><br>
+    <button type="submit">Register</button>
+  </form>

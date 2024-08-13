@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Review</title>
+</head>
+<body>
+  
+</body>
+</html>
+<div class="movie-review">
+    <h2>Movie Review:</h2>
+    <h1 id="movie-title">Manjummel Boys</h1>
+    <div class="movie-poster">
+      <img src="https://miro.medium.com/v2/resize:fit:828/format:webp/1*FSAhbkhy0FXWShVYjB5T3Q.jpeg" alt="Manjummel Boys Poster">
+    </div>
+    <div class="review-content">
+      <h3>Rating:</h3>
+      <span id="rating">5/5 stars</span>
+      <h3>Review:</h3>
+      <p id="review-text">"A group of friends from Manjummel (Kerala) go on a tour to Kodaikanal in 2006. They suddenly remember about Guna caves after listening to the Kammani song from the Guna film. Guna Caves which was originally called Devil's Kitchen is closed and visitors are not allowed inside caves. Despite this, a lot of visitors go and click photos from outside. Manjummel boys sneak into the caves when the guard went for lunch. And one of them accidentally falls in a pit which is more than 100 feet deep. As per the history, none of the people who fell in that put were ever found. Rest of the story is how these friends react and make preparations to save him."</p>
+      <h3>Positives:</h3>
+      <ul id="positives">
+        <li>It is A deeply tribute to True Friendhip</li>
+        <li>Powerful and emotional storyline</li>
+        <li>Timeless themes of hope and redemption</li>
+      </ul>
+      <h3>Negatives:</h3>
+      <ul id="negatives">
+        <li>For casual viewers seeking a suspenseful experience, it's certainly an engaging watch. But for those craving a more profound or innovative exploration of the survival genre, Manjummel Boys might fall short of expectations.</li>
+      </ul>
+    </div>
+    <div class="reviewer-info">
+      <h3>Reviewer:</h3>
+      <span id="reviewer-name">Fazal khan</span>
+      <h3>Review Date:</h3>
+      <span id="review-date">August 04, 2024</span>
+    </div>
+  </div>
+  
+  <!-- Add some basic styling -->
+  <style>
+    .movie-review {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .movie-poster {
+      float: left;
+      margin-right: 20px;
+    }
+    .movie-poster img {
+      width: 200px;
+      height: 300px;
+      border-radius: 10px;
+    }
+    .review-content {
+      float: left;
+      width: 60%;
+    }
+    .reviewer-info {
+      clear: both;
+      padding-top: 20px;
+    }
+    h1, h2, h3 {
+      color: #333;
+    }
+    #rating {
+      font-size: 24px;
+      color: #666;
+    }
+    #review-text {
+      font-size: 18px;
+      color: #666;
+    }
+    #positives, #negatives {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    #positives li, #negatives li {
+      padding: 10px;
+      border-bottom: 1px solid #ccc;
+    }
+    #positives li:last-child, #negatives li:last-child {
+      border-bottom: none;
+    }
+  </style>

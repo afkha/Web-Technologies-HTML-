@@ -1,0 +1,41 @@
+<form>
+    <h1>Course Feedback Form</h1>
+    <fieldset>
+      <legend>Course Information</legend>
+      <label>Course Name:</label>
+      <br>
+      <input type="radio" id="pythonProgramming" name="courseName" value="pythonProgramming"> Python Programming
+      <br>
+      <input type="radio" id="dataScience" name="courseName" value="dataScience"> Data Science
+      <br>
+      <input type="radio" id="machineLearning" name="courseName" value="machineLearning"> Machine Learning
+      <!-- add more options here -->
+      <br>
+    </fieldset>
+    <fieldset>
+      <legend>Rating</legend>
+      <label for="rating">Overall Rating:</label>
+      <input type="radio" id="rating1" name="rating" value="1"> 1 (Poor)
+      <input type="radio" id="rating2" name="rating" value="2"> 2 (Fair)
+      <input type="radio" id="rating3" name="rating" value="3"> 3 (Good)
+      <input type="radio" id="rating4" name="rating" value="4"> 4 (Very Good)
+      <input type="radio" id="rating5" name="rating" value="5"> 5 (Excellent)
+      <br><br>
+    </fieldset>
+    <fieldset>
+      <legend>Feedback</legend>
+      <label for="feedback">What did you like most about the course?</label>
+      <textarea id="feedback" name="feedback" required></textarea>
+      <br><br>
+      <label for="areasForImprovement">What areas of the course need improvement?</label>
+      <textarea id="areasForImprovement" name="areasForImprovement" required></textarea>
+      <br><br>
+    </fieldset>
+    <fieldset>
+      <legend>Additional Comments</legend>
+      <label for="additionalComments">Any additional comments or suggestions?</label>
+      <textarea id="additionalComments" name="additionalComments"></textarea>
+      <br><br>
+    </fieldset>
+    <input type="submit" value="Submit Feedback">
+  </form>

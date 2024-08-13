@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deactivation</title>
+    <style>
+        #deactivation-form {
+          max-width: 500px;
+          margin: 40px auto;
+          padding: 20px;
+          border: 1px solid #ccc;
+          border-radius: 10px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .form-group {
+          margin-bottom: 20px;
+        }
+        label {
+          display: block;
+          margin-bottom: 10px;
+        }
+        input[type="text"], input[type="password"] {
+          width: 100%;
+          height: 40px;
+          padding: 10px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+        }
+        select {
+          width: 100%;
+          height: 40px;
+          padding: 10px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+        }
+        textarea {
+          width: 100%;
+          height: 100px;
+          padding: 10px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+        }
+        button[type="submit"] {
+          width: 100%;
+          height: 40px;
+          padding: 10px;
+          border: none;
+          border-radius: 5px;
+          background-color: #0077b5;
+          color: #fff;
+          cursor: pointer;
+        }
+        button[type="submit"]:hover {
+          background-color: #005ea5;
+        }
+      </style>
+</head>
+<body>
+    
+</body>
+</html>
+<form id="deactivation-form">
+    <h2>Deactivate Your LinkedIn Account</h2>
+    <p>Please confirm that you want to deactivate your LinkedIn account.</p>
+    <div class="form-group">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
+    </div>
+    <div class="form-group">
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+    </div>
+    <div class="form-group">
+      <label for="reason">Reason for deactivation:</label>
+      <select id="reason" name="reason">
+        <option value="">Select a reason</option>
+        <option value="not-using">Not using LinkedIn anymore</option>
+        <option value="too-many-emails">Receiving too many emails</option>
+        <option value="other">Other (please specify)</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="other-reason">Other reason:</label>
+      <textarea id="other-reason" name="other-reason" placeholder="Please specify other reason"></textarea>
+    </div>
+    <div class="form-group">
+      <label for="confirm">Confirm deactivation:</label>
+      <input type="checkbox" id="confirm" name="confirm" required>
+      <span>I confirm that I want to deactivate my LinkedIn account.</span>
+    </div>
+    <button type="submit">Deactivate Account</button>
+  </form>
+  
+  <!-- Add some basic styling -->
+  <style>
+    #deactivation-form {
+      max-width: 500px;
+      margin: 40px auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+    input[type="text"], input[type="password"] {
+      width: 100%;
+      height: 40px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    select {
+      width: 100%;
+      height: 40px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    textarea {
+      width: 100%;
+      height: 100px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button[type="submit"] {
+      width: 100%;
+      height: 40px;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: #0077b5;
+      color: #fff;
+      cursor: pointer;
+    }
+    button[type="submit"]:hover {
+      background-color: #005ea5;
+    }
+  </style>

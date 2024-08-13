@@ -1,0 +1,11 @@
+<!-- HTML -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Basic Web Page</title>
+</head>
+<body>
+  <h1>Welcome to My Web Page</h1>
+  <p>This is a basic web page.</p>
+</body>
+</html>
