@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 500px;
+        }
+
+        .current-weather {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .location {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .time {
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        .temperature {
+            font-size: 48px;
+            font-weight: bold;
+        }
+
+        .feels-like {
+            font-size: 16px;
+            margin-top: 5px;
+        }
+
+        .weather-details {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .weather-detail {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0 10px;
+        }
+
+        .weather-detail i {
+            font-size: 24px;
+        }
+
+        .weather-detail span {
+            font-size: 14px;
+            margin-top: 5px;
+        }
+
+        .forecast {
+            margin-top: 20px;
+        }
+
+        .forecast-header {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .hourly-forecast {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .hourly-forecast-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #f5f5f5;
+        }
+
+        .hourly-forecast-item i {
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+
+        .hourly-forecast-item span {
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="current-weather">
+            <div class="location">Athens</div>
+            <div class="time">09:03</div>
+        </div>
+        <div class="temperature">24°C</div>
+        <div class="feels-like">Feels like: 22°C</div>
+        <div class="weather-details">
+            <div class="weather-detail">
+                <i class="fas fa-sun"></i>
+                <span>Sunrise: 08:30 AM</span>
+            </div>
+            <div class="weather-detail">
+                <i class="fas fa-moon"></i>
+                <span>Sunset: 20:37 AM</span>
+            </div>
+            <div class="weather-detail">
+                <i class="fas fa-tint"></i>
+                <span>Humidity: 47%</span>
+            </div>
+            <div class="weather-detail">
+                <i class="fas fa-wind"></i>
+                <span>Wind Speed: 2km/h</span>
+            </div>
+            <div class="weather-detail">
+                <i class="fas fa-cloud-sun"></i>
+                <span>Sunny</span>
+            </div>
+        </div>
+        <div class="forecast">
+            <div class="forecast-header">5 Days Forecast:</div>
+            <div class="daily-forecast">
+                <div class="daily-forecast-item">
+                    <i class="fas fa-cloud-sun"></i>
+                    <span>20°C</span>
+                    <span>Friday, 1 Sep</span>
+                </div>
+                <div class="daily-forecast-item">
+                    <i class="fas fa-cloud-sun"></i>
+                    <span>22°C</span>
+                    <span>Saturday, 2 Sep</span>
+                </div>
+                <div class="daily-forecast-item">
+                    <i class="fas fa-sun"></i>
+                    <span>27°C</span>
+                    <span>Sunday, 3 Sep</span>
+                </div>
+                <div class="daily-forecast-item">
+                    <i class="fas fa-cloud-rain"></i>
+                    <span>18°C</span>
+                    <span>Monday, 4 Sep</span>
+                </div>
+                <div class="daily-forecast-item">
+                    <i class="fas fa-cloud-showers-heavy"></i>
+                    <span>16°C</span>
+                    <span>Tuesday, 5 Sep</span>
+                </div>
+            </div>
+        </div>
+        <div class="forecast">
+            <div class="forecast-header">Hourly Forecast:</div>
+            <div class="hourly-forecast">
+                <div class="hourly-forecast-item">
+                    <i class="fas fa-sun"></i>
+                    <span>12:00</span>
+                    <span>26°C</span>
+                    <span>3km/h</span>
+                </div>
+                <div class="hourly-forecast-item">
+                    <i class="fas fa-sun"></i>
+                    <span>15:00</span>
+                    <span>27°C</span>
+                    <span>2km/h</span>
+                </div>
+                <div class="hourly-forecast-item">
+                    <i class="fas fa-cloud-sun"></i>
+                    <span>18:00</span>
+                    <span>27°C</span>
+                    <span>2km/h</span>
+                </div>
+                <div class="hourly-forecast-item">
+                    <i class="fas fa-cloud-sun"></i>
+                    <span>21:00</span>
+                    <span>26°C</span>
+                    <span>3km/h</span>
+                </div>
+                <div class="hourly-forecast-item">
+                    <i class="fas fa-sun"></i>
+                    <span>00:00</span>
+                    <span>22°C</span>
+                    <span>3km/h</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/your-font-awesome-kit-id.js" crossorigin="anonymous"></script> 
+</body>
+</html>
